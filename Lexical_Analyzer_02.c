@@ -65,7 +65,7 @@ int main(int argc,char *argv[]){
 				state=7;
 				string[++maxindex]=ch;
 			}
-			else if(ch=='*'||ch=='/'||ch=='^'||ch=='%'||ch=='('||ch==')'){
+			else if(ch=='='||ch=='*'||ch=='/'||ch=='^'||ch=='%'||ch=='('||ch==')'){
 				state=3;
 				string[++maxindex]=ch;
 			}
@@ -103,7 +103,7 @@ int main(int argc,char *argv[]){
 				maxindex=-1;
 				string[++maxindex]=ch;
 			}
-			else if(ch=='*'||ch=='/'||ch=='^'||ch=='%'||ch=='('||ch==')'){
+			else if(ch=='='||ch=='*'||ch=='/'||ch=='^'||ch=='%'||ch=='('||ch==')'){
 				state=3;
 				string[++maxindex]='\0';
 				fprintf(fout,"< di , %10s >\n",string);
@@ -144,7 +144,7 @@ int main(int argc,char *argv[]){
 				maxindex=-1;
 				string[++maxindex]=ch;
 			}
-			else if(ch=='*'||ch=='/'||ch=='^'||ch=='%'||ch=='('||ch==')'){
+			else if(ch=='='||ch=='*'||ch=='/'||ch=='^'||ch=='%'||ch=='('||ch==')'){
 				state=3;
 				string[++maxindex]='\0';
 				fprintf(fout,"< id , %10s >\n",string);
@@ -191,7 +191,7 @@ int main(int argc,char *argv[]){
 				maxindex=-1;
 				string[++maxindex]=ch;
 			}
-			else if(ch=='*'||ch=='/'||ch=='^'||ch=='%'||ch=='('||ch==')'){
+			else if(ch=='='||ch=='*'||ch=='/'||ch=='^'||ch=='%'||ch=='('||ch==')'){
 				state=3;
 				string[++maxindex]='\0';
 				fprintf(fout,"< op , %10s >\n",string);
@@ -223,7 +223,7 @@ int main(int argc,char *argv[]){
 				state=3;
 				string[++maxindex]=ch;
 			}
-			else if(ch=='*'||ch=='/'||ch=='^'||ch=='%'||ch=='('||ch==')'){
+			else if(ch=='='||ch=='*'||ch=='/'||ch=='^'||ch=='%'||ch=='('||ch==')'){
 				state=3;
 				string[++maxindex]=ch;
 			}
@@ -252,7 +252,7 @@ int main(int argc,char *argv[]){
 				state=7;
 				string[++maxindex]=ch;
 			}
-			else if(ch=='*'||ch=='/'||ch=='^'||ch=='%'||ch=='('||ch==')'){
+			else if(ch=='='||ch=='*'||ch=='/'||ch=='^'||ch=='%'||ch=='('||ch==')'){
 				state=3;
 				string[++maxindex]=ch;
 			}
@@ -281,7 +281,7 @@ int main(int argc,char *argv[]){
 				state=7;
 				string[maxindex]='-';
 			}
-			else if(ch=='*'||ch=='/'||ch=='^'||ch=='%'||ch=='('||ch==')'){
+			else if(ch=='='||ch=='*'||ch=='/'||ch=='^'||ch=='%'||ch=='('||ch==')'){
 				state=3;
 				string[++maxindex]='\0';
 				fprintf(fout,"< op , %10s >\n",string);
@@ -313,7 +313,7 @@ int main(int argc,char *argv[]){
 				state=6;
 				string[maxindex]='+';
 			}
-			else if(ch=='*'||ch=='/'||ch=='^'||ch=='%'||ch=='('||ch==')'){
+			else if(ch=='='||ch=='*'||ch=='/'||ch=='^'||ch=='%'||ch=='('||ch==')'){
 				state=3;
 				string[++maxindex]='\0';
 				fprintf(fout,"< op , %10s >\n",string);
@@ -354,7 +354,7 @@ int main(int argc,char *argv[]){
 				maxindex=-1;
 				string[++maxindex]=ch;
 			}
-			else if(ch=='*'||ch=='/'||ch=='^'||ch=='%'||ch=='('||ch==')'){
+			else if(ch=='='||ch=='*'||ch=='/'||ch=='^'||ch=='%'||ch=='('||ch==')'){
 				state=3;
 				string[++maxindex]='\0';
 				fprintf(fout,"< er , %10s >\n",string);
